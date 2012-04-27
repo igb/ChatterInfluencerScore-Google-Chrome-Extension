@@ -1,0 +1,14 @@
+{
+  "name": "Chatter Influencer Score",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Display Chatter Influencer score as a number (instead of a barchart).",
+  "content_scripts": [
+    {
+      "matches": ["https://*/_ui/core/userprofile/UserProfilePage*"],
+      "js": ["post.js"],
+      "runat":  "document_idle"
+    }
+  ]
+  
+}
