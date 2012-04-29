@@ -15,7 +15,7 @@ function replaceInfluencerBarWithNumber()
 				var score=document.createElement("div");
 				score.setAttribute("class", "influenceNumber");
 				score.setAttribute("style", "color:#000000");
-				score.innerHTML="<br/>Chatter Score: " + marker.style.left.substring(0, 5);
+				score.innerHTML="<br/>Chatter Score: " + marker.style.left.replace('%','').substring(0, 5);
 				parentNode.appendChild(score);
 			    }
 			
